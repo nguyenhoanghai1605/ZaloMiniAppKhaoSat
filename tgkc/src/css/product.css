@@ -1,0 +1,136 @@
+/* --------------------------------------------------ProductList-------------------------------------------- */
+
+/* CSS cho hiển thị 2 sản phẩm trên 1 hàng ngang */
+.product-scroll-container {
+  overflow-x: auto; /* Tạo thanh cuộn ngang khi nội dung vượt quá kích thước container */
+}
+
+.product-scroll {
+  display: flex; /* Hiển thị các sản phẩm theo hàng ngang */
+  flex-wrap: wrap; /* Cho phép các sản phẩm tự động xuống dòng khi không đủ chỗ */
+  gap: 20px; /* Khoảng cách giữa các sản phẩm */
+}
+
+/* CSS cho sản phẩm */
+.product-card {
+  flex: 0 0 calc(50% - 10px); /* Để hiển thị 2 sản phẩm trên 1 hàng và có khoảng cách 20px giữa chúng */
+  max-width: calc(
+    50% - 10px
+  ); /* Điều chỉnh kích thước sản phẩm theo ý muốn và tránh tràn viền */
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Canh chỉnh văn bản giữa trung tâm */
+  margin-bottom: 1px; /* Khoảng cách giữa các hàng sản phẩm */
+}
+
+.product-card .product-card-inner {
+  padding: 1rem;
+}
+
+.product-image {
+  max-width: 100%; /* Để hình ảnh không bị tràn viền */
+  height: auto;
+  display: block; /* Đảm bảo hình ảnh không bị căn chỉnh theo dòng */
+  margin: 0 auto; /* Canh chỉnh hình ảnh giữa trung tâm */
+}
+
+.product-name {
+  font-size: 1rem; /* Điều chỉnh kích thước văn bản cho tên sản phẩm */
+  margin: 0.5rem 0; /* Điều chỉnh khoảng cách giữa các tên sản phẩm */
+}
+
+.product-price {
+  font-size: 15px;
+  margin-top: 0.2rem; /* Khoảng cách giữa giá và tên sản phẩm */
+  margin-bottom: -10px;
+}
+
+.text-xl {
+  font-size: 15px;
+}
+
+/* Đoạn CSS cho phân trang */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 4px; /* Khoảng cách giữa các trang */
+}
+
+.pagination a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+  background-color: #eee;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* CSS cho phân trang */
+.pagination {
+  display: flex;
+  flex-wrap: wrap; /* Tự động xuống dòng nếu cần */
+  justify-content: left;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  z-index: 1; /* Đảm bảo phân trang hiển thị phía trên danh sách sản phẩm */
+}
+
+/* CSS cho phân trang hiện tại */
+.pagination li.active {
+  color: #fff; /* Màu chữ của trang hiện tại */
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: default;
+  font-weight: bold; /* In đậm trang hiện tại */
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+.product-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-filter {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+.price-filter label {
+  margin-right: 5px; /* Khoảng cách giữa nhãn và input */
+}
+
+.price-filter {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+.price-input {
+  width: 100px; /* Điều chỉnh chiều rộng của ô input */
+  margin-right: 10px; /* Khoảng cách giữa các ô input */
+}
+
+/* Trong tệp CSS của bạn */
+
+.large-input {
+  width: 100px;
+  /* Độ rộng mong muốn */
+  padding: 5px;
+  /* Đệm để tạo khoảng cách xung quanh nội dung */
+  font-size: 14.5px; /* Kích thước chữ */
+}

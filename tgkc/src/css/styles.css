@@ -1,0 +1,73 @@
+/* ZaloOA.css */
+.zalo-oa {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.zalo-oa-heading {
+  font-size: 20px;
+  color: #333;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.zalo-oa-list {
+  list-style: none;
+  padding: 0;
+}
+
+.zalo-oa-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.zalo-oa-title {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.zalo-oa-content {
+  font-size: 16px;
+  color: #666;
+}
+
+.zalo-oa-thumb {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* .zalo-oa-link {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+} */
+
+.zalo-oa-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  background: none;
+  border: none;
+  padding: 0;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #0068ff;
+
+  cursor: pointer;
+}
+
+.zalo-oa-link::after {
+  content: "›";
+  font-size: 16px;
+}

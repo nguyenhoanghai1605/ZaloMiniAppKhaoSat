@@ -1,0 +1,36 @@
+/* CSS cho container của form */
+.forms-lien-he {
+  /* Đặt kích thước và căn giữa form */
+  width: 100%;
+  margin-left: 0px; /* Lề bên trái 20px */
+  margin-right: 20px; /* Lề bên phải 20px */
+  text-align: center;
+}
+
+/* CSS cho iframe */
+.forms-lien-he iframe {
+  width: calc(
+    100% - 32px
+  ); /* Chiều rộng = 100% - (lề bên trái + lề bên phải) */
+  height: 975px; /* Điều chỉnh chiều cao theo mong muốn */
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng form */
+}
+
+/* Thay đổi màu nền và màu văn bản trong form */
+.forms-lien-he iframe body {
+  background-color: #f0f0f0; /* Màu nền */
+  color: #333; /* Màu văn bản */
+}
+
+/* Thay đổi kiểu font chữ trong form */
+.forms-lien-he iframe body {
+  font-family: Arial, sans-serif;
+}
+
+/* Để căn giữa nội dung trong form */
+.forms-lien-he iframe body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

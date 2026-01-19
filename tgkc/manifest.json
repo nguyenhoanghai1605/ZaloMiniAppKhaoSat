@@ -1,0 +1,10 @@
+{
+  "manifest_version": 1,
+  "name": "Thế Giới Kim Cương",
+  "start_url": "index.html",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+   "permissions": {
+     "zalo_oa_id": "94143331359749352" 
+   }
+}

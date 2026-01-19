@@ -1,0 +1,100 @@
+/* CSS cho các ô nhỏ nhỏ */
+.small-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #afa6a6;
+  border-radius: 50%;
+  margin: 0 5px; /* Khoảng cách giữa các ô nhỏ nhỏ */
+}
+
+/* CSS cho ô nhỏ nhỏ hiện tại (active) */
+.dot.active {
+  background-color: #007bff; /* Màu nền cho ô nhỏ nhỏ hiện tại */
+}
+
+/* ------------------------------ */
+/* Đảm bảo rằng phần tử cha chứa "Xin chào" và nút "Quan tâm" sử dụng flexbox */
+.flex-container {
+  display: flex;
+  justify-content: space-between; /* Căn nút "Quan tâm" sang bên phải */
+  align-items: center; /* Căn nội dung theo chiều dọc */
+  width: 100%;
+}
+
+/* Đặt khoảng cách giữa các phần tử con */
+.text-xin-chao {
+  margin-right: 10px; /* Khoảng cách giữa "Xin chào" và nút "Quan tâm" */
+}
+
+/* CSS cho nút "Quan tâm" */
+.follow-button {
+  text-align: center;
+  height: 40px;
+  width: 100px;
+  background-color: #0099ff;
+}
+
+/* CSS để căn nút "Quan tâm" sang bên phải */
+.follow-button {
+  float: right;
+}
+
+/* --------------------------------------------------ProductList-------------------------------------------- */
+
+/* CSS cho hiển thị 2 sản phẩm trên 1 hàng ngang */
+.product-scroll-container {
+  overflow-x: auto; /* Tạo thanh cuộn ngang khi nội dung vượt quá kích thước container */
+}
+
+.product-scroll {
+  display: flex; /* Hiển thị các sản phẩm theo hàng ngang */
+  flex-wrap: wrap; /* Cho phép các sản phẩm tự động xuống dòng khi không đủ chỗ */
+  gap: 20px; /* Khoảng cách giữa các sản phẩm */
+}
+
+/* CSS cho sản phẩm */
+.product-card {
+  flex: 0 0 calc(50% - 10px); /* Để hiển thị 2 sản phẩm trên 1 hàng và có khoảng cách 20px giữa chúng */
+  max-width: calc(
+    50% - 10px
+  ); /* Điều chỉnh kích thước sản phẩm theo ý muốn và tránh tràn viền */
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Canh chỉnh văn bản giữa trung tâm */
+  margin-bottom: 1px; /* Khoảng cách giữa các hàng sản phẩm */
+}
+
+.product-card .product-card-inner {
+  padding: 1rem;
+}
+
+.product-image {
+  max-width: 100%; /* Để hình ảnh không bị tràn viền */
+  height: auto;
+  display: block; /* Đảm bảo hình ảnh không bị căn chỉnh theo dòng */
+  margin: 0 auto; /* Canh chỉnh hình ảnh giữa trung tâm */
+}
+
+.product-name {
+  font-size: 1rem; /* Điều chỉnh kích thước văn bản cho tên sản phẩm */
+  margin: 0.5rem 0; /* Điều chỉnh khoảng cách giữa các tên sản phẩm */
+}
+
+.product-price {
+  margin-top: 1rem; /* Khoảng cách giữa giá và tên sản phẩm */
+}
+
+.text-xl {
+  font-size: 15px;
+}

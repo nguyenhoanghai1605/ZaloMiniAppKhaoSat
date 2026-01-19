@@ -1,0 +1,30 @@
+.pagination-phan-trang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.pagination-phan-trang button {
+  background-color: #dbe2ec;
+  color: rgb(0, 0, 0);
+  border: 1px solid #cacfd6;
+  margin: 2px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  min-width: 40px; /* Đặt kích thước tối thiểu cho nút */
+}
+
+.pagination-phan-trang button:hover {
+  background-color: #646972;
+  color: floralwhite;
+}
+
+.pagination-phan-trang .active {
+  background-color: #646972;
+  color: floralwhite;
+}
